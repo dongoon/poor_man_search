@@ -1,0 +1,3 @@
+module PoorManSearch
+  VERSION = "0.0.1"
+end
