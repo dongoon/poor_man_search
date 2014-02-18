@@ -7,9 +7,9 @@ Gem::Specification.new do |spec|
   spec.name          = "poor_man_search"
   spec.version       = PoorManSearch::VERSION
   spec.authors       = ["Yasuhiko Maeda"]
-  spec.email         = ["y-maeda@smalltalk.co.jp"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.email         = ["y.maeda@dongoon.jp"]
+  spec.description   = %q{Poor man's search engine module for Rails3 (Arel)}
+  spec.summary       = %q{Poor man's search engine module for Rails3 (Arel)}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,7 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency(%q<activerecord>, [">= 3.0.0"])
+
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec"
 end
