@@ -31,7 +31,7 @@ module PoorManSearch
       search_scope
     end
 
-    def associated_search key_words_string, *associations
+    def associative_search key_words_string, *associations
       ids = search(key_words_string).select("#{self.table_name}.id")
       ids += associations.collect{|as|
         scoped.includes(as).merge(asociation_class(as).search(key_words_string)).select("#{self.table_name}.id")
