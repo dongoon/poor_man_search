@@ -4,8 +4,10 @@ ActiveRecord::Base.establish_connection( :adapter => 'sqlite3', :database => ':m
 class CreateTestTables < ActiveRecord::Migration
   def self.up
     create_table :users do |t|
-      t.string :name
       t.string :email
+      t.string :name
+      t.integer :rank
+      t.datetime :registered_at
     end
 
     create_table :comments do |t|
@@ -22,6 +24,10 @@ CreateTestTables.up
 
 class User < ActiveRecord::Base
   has_many :comments
+
+  def say comment
+    comments.create(count: comments.count + 1, said: comment)
+  end
 end
 
 class Comment < ActiveRecord::Base
