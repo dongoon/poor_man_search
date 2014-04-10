@@ -1,4 +1,4 @@
-# PoorManSearch [![Build Status](https://travis-ci.org/dongoon/poor_man_search.png)](https://travis-ci.org/dongoon/https://travis-ci.org/dongoon/poor_man_search.png)
+# PoorManSearch [![Build Status](https://travis-ci.org/dongoon/poor_man_search.png)](https://travis-ci.org/dongoon/https://travis-ci.org/dongoon/poor_man_search.png) [![Coverage Status](https://coveralls.io/repos/dongoon/poor_man_search/badge.png?branch=master)](https://coveralls.io/r/dongoon/poor_man_search?branch=master)
 
 This module implement **Poor Man's Search Engin** to a active-record object.
 > Poor Man's Search Engin is a SQL anti pattern that using LIKE with wildcards search..
