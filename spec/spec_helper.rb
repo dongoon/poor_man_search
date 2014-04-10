@@ -1,6 +1,8 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'rspec'
 require 'poor_man_search'
+require 'coveralls'
+Coveralls.wear!
 
 if ENV['COVERAGE']
   require 'simplecov'
