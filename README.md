@@ -1,6 +1,7 @@
 # PoorManSearch
 
-TODO: Write a gem description
+This module implement **Poor Man's Search Engin** to a active-record object.
+> Poor Man's Search Engin is a SQL anti pattern that using LIKE with wildcards search..
 
 ## Installation
 
