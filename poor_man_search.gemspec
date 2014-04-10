@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["y.maeda@dongoon.jp"]
   spec.description   = %q{Poor man's search engine module for Rails3 (Arel)}
   spec.summary       = %q{Poor man's search engine module for Rails3 (Arel)}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/dongoon/poor_man_search"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,16 +18,14 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency(%q<activerecord>, [">= 3.0.0"])
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "simplecov"
-  spec.add_development_dependency "activerecord", "~> 3.2"
   spec.add_development_dependency "sqlite3-ruby"
   spec.add_development_dependency "database_cleaner"
 
-  spec.add_runtime_dependency "activerecord", ">= 3.0.0"
+  spec.add_runtime_dependency "activerecord", "~> 3.2", ">= 3.0.0"
   spec.add_runtime_dependency "arel", ">= 3.0.0"
 end
